@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "singleQuote": false,
+  "printWidth": 80,
+  "useTabs": false,
+  "experimentalSortPackageJson": {
+    "sortScripts": true
+  },
+  "experimentalSortImports": {
+    "newlinesBetween": true
+  },
+  "ignorePatterns": ["app/src/client", "app/src/typed-router.d.ts"],
+  "sortTailwindcss": {
+    "stylesheet": "src/App.css"
+  },
+  "tabWidth": 2
+}

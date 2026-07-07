@@ -8,12 +8,11 @@ const host = process.env.TAURI_DEV_HOST;
 
 // https://vite.dev/config/
 export default defineConfig(async () => ({
-  clearScreen: false,
-  plugins: [react(), tailwindcss()],
   build: {
     rollupOptions: {
       output: {
         manualChunks: {
+          "vendor-icons": ["@tabler/icons-react"],
           "vendor-tiptap": [
             "@tiptap/react",
             "@tiptap/starter-kit",
@@ -22,11 +21,12 @@ export default defineConfig(async () => ({
             "@tiptap/extension-task-item",
             "@tiptap/extension-task-list",
           ],
-          "vendor-icons": ["@tabler/icons-react"],
         },
       },
     },
   },
+  clearScreen: false,
+  plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

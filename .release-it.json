@@ -10,7 +10,7 @@
     "releaseName": "v${version}"
   },
   "hooks": {
-    "after:bump": "node scripts/sync-version.mjs"
+    "after:bump": ["node scripts/sync-version.mjs", "bun run format:fix"]
   },
   "plugins": {
     "@release-it/conventional-changelog": {

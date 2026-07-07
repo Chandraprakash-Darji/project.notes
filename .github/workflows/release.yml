@@ -73,16 +73,7 @@ jobs:
 
       - run: bun install --frozen-lockfile
 
-      - name: Build Tauri app (signed + notarized)
-        env:
-          # Code signing — required
-          APPLE_CERTIFICATE: ${{ secrets.APPLE_CERTIFICATE }}
-          APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
-          APPLE_SIGNING_IDENTITY: ${{ secrets.APPLE_SIGNING_IDENTITY }}
-          # Notarization — required for Gatekeeper to accept the DMG
-          APPLE_ID: ${{ secrets.APPLE_ID }}
-          APPLE_PASSWORD: ${{ secrets.APPLE_PASSWORD }}
-          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+      - name: Build Tauri app
         run: bun tauri build
 
       - name: Upload DMG to GitHub Release

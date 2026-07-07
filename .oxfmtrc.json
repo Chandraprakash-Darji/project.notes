@@ -9,7 +9,11 @@
   "experimentalSortImports": {
     "newlinesBetween": true
   },
-  "ignorePatterns": ["app/src/client", "app/src/typed-router.d.ts"],
+  "ignorePatterns": [
+    "app/src/client",
+    "app/src/typed-router.d.ts",
+    "CHANGELOG.md"
+  ],
   "sortTailwindcss": {
     "stylesheet": "src/App.css"
   },

@@ -138,11 +138,7 @@ export function BrowseNotes({
                 title={n.pinned ? "Unpin" : "Pin"}
                 onClick={() => onTogglePin(n.id)}
                 icon={
-                  n.pinned ? (
-                    <IconPinnedOff size={15} />
-                  ) : (
-                    <IconPin size={15} />
-                  )
+                  n.pinned ? <IconPinnedOff size={15} /> : <IconPin size={15} />
                 }
               />
               <ActionBtn

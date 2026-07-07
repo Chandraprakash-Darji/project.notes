@@ -1,6 +1,6 @@
 [package]
 name = "rega-notes"
-version = "0.1.0"
+version = "0.1.1"
 description = "Rega Notes — a floating Markdown note-taker"
 authors = ["you"]
 edition = "2021"

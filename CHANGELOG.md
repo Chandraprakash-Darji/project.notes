@@ -1,5 +1,7 @@
 # Changelog
 
+## [0.1.2](https://github.com/Chandraprakash-Darji/project.rega/compare/v0.1.1...v0.1.2) (2026-07-07)
+
 ## 0.1.1 (2026-07-07)
 
 
